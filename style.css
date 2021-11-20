@@ -1,6 +1,6 @@
 :root {
   --Soft-blue: hsl(215, 51%, 70%);
-  --Cyan: hsl(178, 100%, 50%);
+  /* --Cyan: hsl(178, 100%, 50%); */
   --Very-dark-blue-main: hsl(217, 54%, 11%); /* main background*/
   --Very-dark-blue-card: hsl(216, 50%, 16%); /* (card BG)  */
   --Very-dark-blue-line: hsl(215, 32%, 27%);
@@ -45,10 +45,7 @@ img {
   align-items: center;
   cursor: pointer;
 }
-img:hover {
-  background-color: var(--Cyan);
-  color: var(--Cyan);
-}
+
 .cont2 {
   display: flex;
   margin-top: -20px;
@@ -127,7 +124,7 @@ em {
   }
   img {
     height: 30vh;
-    width: 55vw;
+    width: 52vw;
   }
   .line {
     width: 13rem;
@@ -145,5 +142,71 @@ em {
   .text p {
     font-size: 12px;
     margin-top: 22px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    height: 60vh;
+    width: 55vw;
+  }
+  img {
+    height: 30vh;
+    width: 50vw;
+  }
+  h2 {
+    font-size: medium;
+  }
+  p,
+  h3 {
+    font-size: 13px;
+  }
+  .line {
+    width: 10rem;
+  }
+
+  #clock {
+    margin-left: 7px;
+  }
+  .text p {
+    font-size: 10px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 1350px) {
+  body {
+    text-align: centre;
+  }
+  .container {
+    width: 12rem;
+    height: 25rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 0.75em;
+  }
+  #clock {
+    margin-left: 2px;
+  }
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
+  #clock {
+    margin-left: 7px;
+  }
+  .line {
+    width: 12rem;
+  }
+  .days p {
+    font-size: 15px;
+    margin-top: 22px;
+  }
+  .text p {
+    margin-top: 28px;
   }
 }
